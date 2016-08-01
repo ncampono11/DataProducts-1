@@ -3,8 +3,14 @@
 This is the Shiny code for the Data Products Coursera course taught by
 John Hopkins University.
 
+## Synopsis
 
-## Your Shiny Application
+This is the user-interface definition of a Shiny web application that
+illustrates the effect of noise on a signal.
+
+## Instructions
+
+### Your Shiny Application
 1. Write a shiny application with associated supporting
    documentation. The documentation should be thought of as whatever a
    user will need to get started using your application.
@@ -31,7 +37,7 @@ to evaluate your application. You should emphasize a simple project
 given the short time frame.
 
 
-## Your Reproducible Pitch Presentation
+### Your Reproducible Pitch Presentation
 
 OK, you've made your shiny app, now it's time to make your pitch. You
 get 5 slides (inclusive of the title slide) to pitch a your

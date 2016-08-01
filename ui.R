@@ -45,12 +45,12 @@ shinyUI(fluidPage(
       # First section
       h3("Objective"),
       p("This is an instructional app which illustrates the effect of noise on a linear model."),
+      p("We are using a linear model of noisy measurements to fit the signal:"),
+      withMathJax("$$y_i=x_i + \\varepsilon_i \\qquad \\text{for}~i = 1,\\dots,n$$."),
       
       # Second section
       h3("Instructions"),
-      p("We are using a linear model of noisy measurements to fit the signal:"),
-      withMathJax("$$y_i=x_i + \\varepsilon_i \\qquad \\text{for}~i = 1,\\dots,n$$"),
-      p("The user chooses the number of points (n) and the mean and standard deviation of the noise:"),
+      p("The user chooses the number of points (n) and the mean and standard deviation of the noise (distributed normally):"),
       withMathJax("$$ \\varepsilon_i  = \\mathcal{N}(\\mu, \\sigma) \\qquad \\text{for}~i = 1,\\dots,n$$"),
 
       # Third section
