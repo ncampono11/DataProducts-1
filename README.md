@@ -17,7 +17,7 @@ John Hopkins University.
 The application must include the following:
 
 1. Some form of input (widget: textbox, radio button, checkbox, ...)
-1. Some operation on the ui input in sever.R
+1. Some operation on the ui input in server.R
 1. Some reactive output displayed as a result of server calculations
 1. You must also include enough documentation so that a novice user could use your application.
 1. The documentation should be at the Shiny website itself. Do not post to an external link.
