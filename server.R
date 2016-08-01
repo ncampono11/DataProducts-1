@@ -1,22 +1,19 @@
 #
-# This is the server logic of a Shiny web application. You can run the 
-# application by clicking 'Run App' above.
-#
-# Find out more about building applications with Shiny here:
+# This is the server definition of a Shiny web application
+# that illustrates the effect of noise on a signal.
 # 
-#    http://shiny.rstudio.com/
+#    
 #
+
 
 library(shiny)
 library(ggplot2)
 
-# Define server logic required to draw a histogram
+# Define server logic required to illustrate the effect of the noise on a signal.
 shinyServer(function(input, output) {
   
   output$text <- renderText({ 
-    paste("A simple measure of the quality of the fit is the R-squared value, which is",
-          input$n,
-          "here. The closer it is to 1, the better you will be able to predict the signal (and vice-versa for 0). The astute user will notice that changing the mean of the noise just shifts the data in the y-direction.")
+    
   })
   
   output$distPlot <- renderPlot({
@@ -37,13 +34,15 @@ shinyServer(function(input, output) {
 
     # Linear regression
     fit <- lm(y ~ x, data = df)
-
+    rsquared <- summary(fit)$r.squared
+    
     # draw the histogram with the specified number of bins
     p <- ggplot(df, aes(x,y)) +
       geom_point() +
-      geom_smooth(method = "lm", se = FALSE)
+      geom_smooth(method = "lm", se = FALSE)+
+      ggtitle(paste("Fit data with linear model, R-squared=", format(rsquared,digits=2))) +
+      theme(plot.title = element_text(size=22))
     p
-
   })
   
 })
