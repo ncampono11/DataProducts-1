@@ -43,7 +43,8 @@ Here's what you need
 1. 5 slides to pitch our idea done in Slidify or Rstudio Presenter
 1. Your presentation pushed to github or Rpubs
 1. A link to your github or Rpubs presentation pasted into the provided text box
-1. Your presentation must satisfy the following
+
+Your presentation must satisfy the following
 
 1. It must be done in Slidify or Rstudio Presenter
 1. It must be 5 pages
