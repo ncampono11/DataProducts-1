@@ -7,7 +7,7 @@ John Hopkins University.
 
 This is the user-interface definition of a Shiny web application that
 illustrates the effect of noise on a signal. The shiny app is deployed
-at [the following website](http://test.com).
+at [the following website](https://marchdf.shinyapps.io/DataProducts/).
 
 ## Project instructions and guidelines
 
