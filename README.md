@@ -6,9 +6,10 @@ John Hopkins University.
 ## Synopsis
 
 This is the user-interface definition of a Shiny web application that
-illustrates the effect of noise on a signal.
+illustrates the effect of noise on a signal. The shiny app is deployed
+at [test](test.com).
 
-## Instructions
+## Project instructions and guidelines
 
 ### Your Shiny Application
 1. Write a shiny application with associated supporting
