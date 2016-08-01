@@ -12,10 +12,6 @@ library(ggplot2)
 # Define server logic required to illustrate the effect of the noise on a signal.
 shinyServer(function(input, output) {
   
-  output$text <- renderText({ 
-    
-  })
-  
   output$distPlot <- renderPlot({
     
     # Set the seed
@@ -36,7 +32,7 @@ shinyServer(function(input, output) {
     fit <- lm(y ~ x, data = df)
     rsquared <- summary(fit)$r.squared
     
-    # draw the histogram with the specified number of bins
+    # Make the plot with the linear model
     p <- ggplot(df, aes(x,y)) +
       geom_point() +
       geom_smooth(method = "lm", se = FALSE)+
