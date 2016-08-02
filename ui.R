@@ -57,7 +57,12 @@ shinyUI(fluidPage(
       h3("Results of the linear model"),
       textOutput("text"),
       p("A simple measure of the quality of the fit is the R-squared value, which is shown in the plot title. The closer it is to 1, the better you will be able to predict the signal (and vice-versa for 0). The astute user will notice that changing the mean of the noise just shifts the data in the y-direction."),
-      plotOutput("distPlot")
+      plotOutput("distPlot"),
+      
+      # Fourth section
+      h3("More information"),
+      p(a("Slides detailing the project", href="https://marchdf.github.io/DataProducts/")),
+      p(a("Github repository", href="https://github.com/marchdf/DataProducts/"))
     )
   )
 ))
