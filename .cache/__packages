@@ -1,0 +1,10 @@
+base
+methods
+colorout
+utils
+datasets
+grDevices
+graphics
+stats
+slidify
+ggplot2
