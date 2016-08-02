@@ -7,7 +7,7 @@ mode     : selfcontained
 framework   : io2012
 ---
 	   
-## This educational Shiny app illustrates the effect of noise on a linear model.
+## This is an educational Shiny app.
 		
 - Linear regressions are often used to model complex effects.
 - Data measurements always have some associated noise.
@@ -68,7 +68,7 @@ ggplot(df, aes(x,y)) +
 
 ---
 
-## If $\sigma$ is large ($= 1.2$), $R^2$ is low (poor fit).
+## If $\sigma$ = 1.2$, $R^2$ is low (poor fit).
 
 ```{r echo = F}
 x <- seq(0,1,length=100)
